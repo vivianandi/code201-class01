@@ -9,3 +9,6 @@ console.log("Question 3:", favoriteColor);
 
 let learningSubject = prompt("What are you learning?");
 console.log("Question 4:", learningSubject);
+
+let responseMessage = "Hello, " + userName + ". You're " + userAge + " years old and your favorite color is " + favoriteColor + ". Currently, you are learning " + learningSubject + ".";
+alert(responseMessage);
