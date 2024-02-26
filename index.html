@@ -4,8 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class 1 Lab</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="/js/scripts.js"></script>
+    <title>Class 1 Lab</title>
+    <style>
+        main h1 {
+            color: #ffffff;
+            background-color: #3498db;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,15 +22,36 @@
     </header>
 
     <main>
-        <p>What's your name?</p>
-        <p>What's your age?</p>
-        <p>What is your favorite color?</p>
-        <p>What are you learning?</p>
+        <p style="color: blue; background-color: yellow;">What's your name?
+            <script>userName()</script>
+        </p>
+
+        <p style="color: green; background-color: pink;">What's your age?
+            <script>userAge()</script>
+        </p>
+
+        <p style="color: white; background-color: blue;">What is your favorite color?
+            <script>favoriteColor()</script>
+        </p>
+
+        <p style="color: black; background-color: orange;">What are you learning?
+            <script>learningSubject()</script>
+        </p>
+
+
+        <script>
+            askUserName();
+            askUserAge();
+            askFavoriteColor();
+            askLearningSubject();
+            showResponseMessage();
+        </script>
     </main>
 
     <footer>
-        &copy; 2024 Your Name
+        &copy; 2024 Vivian Davila
     </footer>
+
 </body>
 
 </html>

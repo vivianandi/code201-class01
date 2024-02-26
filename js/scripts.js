@@ -1,14 +1,28 @@
-let userName = prompt("What's your name?");
-console.log("Question 1:", userName);
+let userName;
+function askUserName() {
+  userName = prompt("What's your name?");
+  console.log("Greetings, " + userName);
+}
 
-let userAge = prompt("What's your age?");
-console.log("Question 2:", userAge);
+let userAge;
+function askUserAge() {
+  userAge = prompt("What's your age?");
+  console.log("Nice to know, " + userName + ". By the way, you're " + userAge + " years old!");
+}
 
-let favoriteColor = prompt("What's your favorite color?");
-console.log("Question 3:", favoriteColor);
+let favoriteColor;
+function askFavoriteColor() {
+  favoriteColor = prompt("What is your favorite color?");
+  console.log("I see, " + userName + " likes " + favoriteColor + ".");
+}
 
-let learningSubject = prompt("What are you learning?");
-console.log("Question 4:", learningSubject);
+let learningSubject;
+function askLearningSubject() {
+  learningSubject = prompt("What are you learning?");
+  console.log("That's interesting, " + userName + " is learning about " + learningSubject + ".");
+}
 
-let responseMessage = "Hello, " + userName + ". You're " + userAge + " years old and your favorite color is " + favoriteColor + ". Currently, you are learning " + learningSubject + ".";
-alert(responseMessage);
+function showResponseMessage() {
+  let message = "Hello, " + userName + ". You're " + userAge + " years old and your favorite color is " + favoriteColor + ". Currently, you are learning " + learningSubject + ".";
+  alert(message);
+}
